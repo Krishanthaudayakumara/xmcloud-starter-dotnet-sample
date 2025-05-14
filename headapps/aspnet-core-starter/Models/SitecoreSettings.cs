@@ -18,5 +18,8 @@ public class SitecoreSettings
 
     public Uri? LocalContainerLayoutUri { get; set; }
 
-    public Uri? EdgeUri { get; set; }
+    public string EdgeUri { get; set; } = string.Empty;
+
+    public string? ApiKey { get; set; }
+
 }

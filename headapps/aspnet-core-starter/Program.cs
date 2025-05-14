@@ -30,7 +30,7 @@ else
 {
     // Register the GraphQL version of the Sitecore Layout Service Client for use against experience edge
     builder.Services.AddSitecoreLayoutService()
-                    .AddGraphQlWithContextHandler("default", sitecoreSettings.EdgeContextId!, sitecoreSettings.EdgeUri!, siteName: sitecoreSettings.DefaultSiteName!)
+                    .AddGraphQlWithContextHandler("default", sitecoreSettings.EdgeContextId!, new Uri(sitecoreSettings.EdgeUri), siteName: sitecoreSettings.DefaultSiteName!)
                     .AsDefaultHandler();
     Console.WriteLine("Sitecore Edge URI: " + sitecoreSettings.EdgeUri);
 }
