@@ -17,4 +17,6 @@ public class SitecoreSettings
     public bool EnableLocalContainer { get; set; }
 
     public Uri? LocalContainerLayoutUri { get; set; }
+
+    public Uri? EdgeUri { get; set; }
 }
